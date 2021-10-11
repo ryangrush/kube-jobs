@@ -12,6 +12,7 @@ default: &default
 development:
   <<: *default
   database: kube_jobs_dev
+  url: postgresql://postgres:asdfasdf@database-1.casw5ano2tbq.us-east-2.rds.amazonaws.com
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,3 +24,4 @@ test:
 production:
   <<: *default
   database: kube_jobs_production
+  url: postgresql://postgres:asdfasdf@database-1.casw5ano2tbq.us-east-2.rds.amazonaws.com
